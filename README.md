@@ -33,7 +33,8 @@ sudo ./myftpd
 ```bash
 cd Client
 make
-sudo ./myftp
+sudo ./myftp target_server.com:port_number
+##e.g. sudo ./myftp ftp_server.com:8080
 ```
 
 ### Notes
