@@ -12,7 +12,7 @@ This project implements a basic File Transfer Protocol (FTP) in C for Linux. It 
 - **Daemon**: Server runs in the background as daemon
 - **Logging**: Server logs all interaction into a log file
 
-**Documentation:**: [File-Transfer-Protocol-Documentation.pdf](https://github.com/user-attachments/files/20023767/File-Transfer-Protocol-Documentation.pdf)
+**Documentation:** [File-Transfer-Protocol-Documentation.pdf](https://github.com/user-attachments/files/20023767/File-Transfer-Protocol-Documentation.pdf)
 
 
 ## Prerequisites
