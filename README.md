@@ -8,7 +8,7 @@ This project implements a basic File Transfer Protocol (FTP) in C for Linux. It 
 ## Features
 - **Send and receive files**: Transfer files between a client and server.
 - **Simple communication**: Basic text-based commands to initiate file transfers.
-- **Linux-based**: Works in a Linux environment using C programming.
+- **Linux-based**: Works in a Linux environment using GNU C programming.
 - **Daemon**: Server runs in the background as daemon
 - **Logging**: Server logs all interaction into a log file
 
