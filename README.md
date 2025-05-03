@@ -3,7 +3,7 @@
 ## Authored by Terence Lee and my university friend and project partner, Hendra Kurniawan
 
 ## Overview
-This project implements a basic File Transfer Protocol (FTP) in C for Linux. It allows for the transfer of files between a client and server over a local network.
+This project implements a basic File Transfer Protocol (FTP) in C for Linux. It allows for the transfer of files between a client and server over a remote network.
 
 ## Features
 - **Send and receive files**: Transfer files between a client and server.
