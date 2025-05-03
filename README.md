@@ -1,4 +1,4 @@
-# Simple File Transfer Protocol (FTP) in C
+# Simple File Transfer Protocol (FTP) in C for Linux
 
 ## Overview
 This project implements a basic File Transfer Protocol (FTP) in C for Linux. It allows for the transfer of files between a client and server over a local network.
