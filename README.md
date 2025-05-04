@@ -1,6 +1,10 @@
+> This project was developed as part of a university coursework. It was a collaborative effort between Terence Lee and Hendra Kurniawan.
+
 # Simple File Transfer Protocol (FTP) in C for Linux
 
-## Authored by Terence Lee and my university friend and project partner, Hendra Kurniawan
+# Authors: 
+Terence Lee<br/>
+Hendra Kurniawan
 
 ## Overview
 This project implements a basic File Transfer Protocol (FTP) in C (GNU) for Linux. It allows for the transfer of files between a client and server over a remote network.
