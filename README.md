@@ -1,51 +1,72 @@
-> This project was developed as part of a university coursework. It was a collaborative effort between Terence Lee and Hendra Kurniawan.
+> This project was developed as part of university coursework and is a collaborative effort between **Terence Lee** and **Hendra Kurniawan**.
 
 # Simple File Transfer Protocol (FTP) in C for Linux
 
-# Authors: 
-Terence Lee<br/>
-Hendra Kurniawan
+## Authors
+- Terence Lee  
+- Hendra Kurniawan
 
 ## Overview
-This project implements a basic File Transfer Protocol (FTP) in C (GNU) for Linux. It allows for the transfer of files between a client and server over a remote network.
+This project implements a basic File Transfer Protocol (FTP) in C (GNU) for Linux. It enables file transfers between a client and a server over a network connection.
 
 ## Features
-- **Send and receive files**: Transfer files between a client and server.
-- **Simple communication**: Basic text-based commands to initiate file transfers.
-- **Linux-based**: Works in a Linux environment using GNU C programming.
-- **Daemon**: Server runs in the background as daemon
-- **Logging**: Server logs all interaction into a log file
+- **Send and receive files** – Transfer files between client and server.
+- **Text-based command interface** – Use simple commands to initiate file transfers.
+- **Linux-based** – Designed for GNU/Linux environments using C.
+- **Daemon mode** – Server runs in the background as a daemon.
+- **Logging** – Server logs all interactions to a log file.
 
-**Documentation:** [File-Transfer-Protocol-Documentation.pdf](https://github.com/user-attachments/files/20023767/File-Transfer-Protocol-Documentation.pdf)
-
+📄 **Documentation:** [File-Transfer-Protocol-Documentation.pdf](https://github.com/user-attachments/files/20023767/File-Transfer-Protocol-Documentation.pdf)
 
 ## Prerequisites
 - Linux-based operating system
-- GCC (GNU Compiler Collection) installed
+- GCC (GNU Compiler Collection)
 
+## Getting Started
 
-### Server
+### Running the Server
 
 ```bash
 cd Server
 make
-sudo ./myftpd
+sudo ./myftpd [initial_current_directory]
 ```
 
-### Client
+- The server program is named `myftpd`, where the `d` stands for **daemon**.
+- It runs as a background daemon process.
+- Optionally, you can provide an initial current directory. If omitted, it inherits the directory from the parent process.
+- If supplied, the server sets the directory using the `chdir()` function.
+- The server maintains its own current working directory which clients can change using the `cd` command.
+
+### Running the Client
 
 ```bash
 cd Client
 make
-sudo ./myftp target_server.com:port_number
-##e.g. sudo ./myftp ftp_server.com:8080
+sudo ./myftp [hostname | IP_address]
 ```
 
-### Notes
-- This is a simple educational project and not suitable for production use.
+- The client program is named `myftp`.
+- If a hostname or IP address is not specified, it connects to the **localhost** by default.
 
-- The server must be started before the client attempts to connect.
+## Usage
 
-- All communication happens over a defined TCP port.
+Once the connection between the client and server is established, the client will display a prompt (`$`), and users can enter the following commands:
 
-- Use within a safe, local environment — there is no encryption or user authentication implemented.
+| Command                  | Description |
+|--------------------------|-------------|
+| `pwd`                    | Display the **server's** current working directory. |
+| `lpwd`                   | Display the **client's** current working directory. |
+| `dir`                    | List files in the **server's** current directory. |
+| `ldir`                   | List files in the **client's** current directory. |
+| `cd directory_pathname`  | Change the **server's** current directory. Supports `.` and `..`. |
+| `lcd directory_pathname` | Change the **client's** current directory. Supports `.` and `..`. |
+| `get filename`           | Download a file from the **server** to the **client**. |
+| `put filename`           | Upload a file from the **client** to the **server**. |
+| `quit`                   | Terminate the FTP session. |
+
+## Notes
+- This is an educational project and **not intended for production use**.
+- Start the server **before** running the client.
+- All communication occurs over a specified TCP port.
+- Use in a **safe, local environment** — encryption and user authentication are **not implemented**.
