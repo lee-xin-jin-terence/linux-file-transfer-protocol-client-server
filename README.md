@@ -1,9 +1,9 @@
-> This project was developed as part of university coursework and is a collaborative effort between **Terence Lee** and **Hendra Kurniawan**.
+> This project was developed as part of university coursework and is a collaborative effort between **Terence Lee Xin Jin** and **Hendra Kurniawan**.
 
 # Simple File Transfer Protocol (FTP) in C for Linux
 
 ## Authors
-- Terence Lee  
+- Terence Lee Xin Jin
 - Hendra Kurniawan
 
 ## Overview
