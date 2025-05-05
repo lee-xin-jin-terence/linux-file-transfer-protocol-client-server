@@ -16,7 +16,8 @@ This project implements a basic File Transfer Protocol (FTP) in C (GNU) for Linu
 - **Daemon mode** – Server runs in the background as a daemon.
 - **Logging** – Server logs all interactions to a log file.
 
-📄 **Documentation:** [File-Transfer-Protocol-Documentation.pdf](https://github.com/user-attachments/files/20023767/File-Transfer-Protocol-Documentation.pdf)
+##📄 **Documentation:** 
+[File-Transfer-Protocol-Documentation.pdf](https://github.com/user-attachments/files/20023767/File-Transfer-Protocol-Documentation.pdf)
 
 ## Prerequisites
 - Linux-based operating system
