@@ -67,7 +67,7 @@ Once the connection between the client and server is established, the client wil
 | `quit`                   | Terminate the FTP session. |
 
 ## Notes
-- This is an educational project and **not intended for production use**.
+- This is an academic project and **not intended for production use**.
 - Start the server **before** running the client.
 - All communication occurs over a specified TCP port.
 - Use in a **safe, local environment** — encryption and user authentication are **not implemented**.
