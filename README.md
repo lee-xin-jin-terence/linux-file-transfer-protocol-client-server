@@ -60,8 +60,8 @@ Once the connection between the client and server is established, the client wil
 | `lpwd`                   | Display the **client's** current working directory. |
 | `dir`                    | List files in the **server's** current directory. |
 | `ldir`                   | List files in the **client's** current directory. |
-| `cd directory_pathname`  | Change the **server's** current directory. Supports `.` and `..`. |
-| `lcd directory_pathname` | Change the **client's** current directory. Supports `.` and `..`. |
+| `cd directory_pathname`  | Change the **server's** current directory. Supports `.` and `..` |
+| `lcd directory_pathname` | Change the **client's** current directory. Supports `.` and `..` |
 | `get filename`           | Download a file from the **server** to the **client**. |
 | `put filename`           | Upload a file from the **client** to the **server**. |
 | `quit`                   | Terminate the FTP session. |
