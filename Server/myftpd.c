@@ -385,7 +385,7 @@ void serveClient(int socketFD)
 	This is important so that we can catch the
 	error of writing to the socket when the client
 	disconnects. Otherwise, the child server
-	process would abruptly by default
+	process would abruptly terminate by default
 	=============================================*/
 	signal(SIGPIPE, SIG_IGN);
 
