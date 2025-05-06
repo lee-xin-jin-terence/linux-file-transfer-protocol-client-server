@@ -334,7 +334,7 @@ int main(int argc, char *argv[])
 		}
 
 		/*==================================
-		 7(c)(vi)Command is cd (print 
+		 7(c)(vi)Command is dir (print 
 		         server directory PATHs)
 		===================================*/
 		else if (strcmp(tokenArr[0], "dir") == 0)
