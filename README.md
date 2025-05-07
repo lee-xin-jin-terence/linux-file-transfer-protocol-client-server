@@ -1,13 +1,14 @@
 > This project was developed as part of university coursework and is a collaborative effort between **Terence Lee Xin Jin** and **Hendra Kurniawan**.
-
 # Simple File Transfer Protocol (FTP) in C for Linux
+
+This project was developed as part of university coursework and is a collaborative effort between **Terence Lee Xin Jin** and **Hendra Kurniawan**.
 
 ## Authors
 - Terence Lee Xin Jin
 - Hendra Kurniawan
 
 ## Overview
-This project implements a basic File Transfer Protocol (FTP) in C (GNU) for Linux. It enables file transfers between a client and a server over a network connection.
+This project implements a basic File Transfer Protocol (FTP) in C (GNU) for Linux using **low-level system programming concepts**. It facilitates file transfers between a client and a server over a network connection through direct interaction with the Linux operating system.
 
 ## Features
 - **Send and receive files** – Transfer files between client and server.
@@ -16,7 +17,19 @@ This project implements a basic File Transfer Protocol (FTP) in C (GNU) for Linu
 - **Daemon mode** – Server runs in the background as a daemon.
 - **Logging** – Server logs all interactions to a log file.
 
-## 📄 **Documentation:** 
+## ⚙️ System Programming Concepts Used
+
+This project demonstrates key concepts in system-level programming on Unix-like systems:
+
+- **POSIX System Calls** – Uses `fork()`, `exec()`, `waitpid()`, `open()`, `read()`, `write()`, `close()`, and `chdir()` for process and file management.
+- **Socket Programming** – Implements TCP-based communication using `socket()`, `bind()`, `listen()`, `accept()`, and `connect()`.
+- **Daemon Processes** – Server runs as a background daemon, demonstrating inter-process communication and service management.
+- **File System Interaction** – Allows dynamic file listing, navigation, and transfers using direct file system access.
+- **Process Control** – Demonstrates client-server architecture and concurrent handling through multiple processes.
+
+This reflects a practical application of Linux system programming concepts typically covered in operating systems or systems programming coursework.
+
+## 📄 Documentation
 [File-Transfer-Protocol-Documentation.pdf](https://github.com/user-attachments/files/20023767/File-Transfer-Protocol-Documentation.pdf)
 
 ## Prerequisites
